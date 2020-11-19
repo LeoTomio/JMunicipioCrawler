@@ -1,17 +1,20 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php
-        // put your code here
-        ?>
-    </body>
-</html>
+<?php
+
+require './util/JMunicipioCrawler.php';
+
+$Mun = new Municipio();
+$link = $Mun->imprimeLink();
+$titu = $Mun->imprimeTitulo();
+$img = $Mun->imprimeImagem();
+
+print_r("Links : ");
+print_r($link);
+
+print_r("Noticia : ");
+print_r($titu);
+
+print_r("Link da Imagens : ");
+print_r($img);
+?>
+
+
