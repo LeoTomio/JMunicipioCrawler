@@ -38,4 +38,12 @@ class Noticia extends Conexao
             $this->insetDb($key['titulos'], $key['imagens'], $key['links']);
         }
     }
+    public function listarNoticias()
+    {
+        $sql = "SELECT * FROM tbl_noticia";
+        $con = self::conecta()->query($sql);
+        $reponse = $con->fetchAll(PDO::FETCH_ASSOC);
+
+        return $reponse;
+    }
 }
