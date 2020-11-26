@@ -35,8 +35,10 @@ $img = $Mun->imprimeImagem();
         <?php 
             for ($i=0; $i < count($titu); $i++):
         ?>
-        <div class="col">
+        <div class="col"> 
+            <br>           
         <div class="card" style="width: 18rem;">
+            
             <img src="<?=$img[$i]?>" class="card-img-top w-100">
             <div class="card-body">
                 <p class="card-text"><?= $titu[$i]?></p>

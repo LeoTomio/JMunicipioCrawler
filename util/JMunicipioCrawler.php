@@ -187,7 +187,7 @@ class Municipio {
                 $classeInterna = $div->getAttribute('class');
 
                 if ($classeInterna == 'entry-title td-module-title') {
-                    $noticia[] = $div->nodeValue;
+                    $noticia[] = utf8_decode($div->nodeValue);
                 }
             }
         }
